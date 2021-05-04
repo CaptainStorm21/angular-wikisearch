@@ -14,6 +14,13 @@ export class SearchBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onFormSubmit(event: any) {
+    //event.preventDefault () stops the function 
+    //and does not refresh automatically
+    event.preventDefault();
+    console.log(this.term);
+    //takes the stored property entrance and sends it backt to the app component
+  }
   // onInput(value: string) {
   //   this.term = value;
   // }
