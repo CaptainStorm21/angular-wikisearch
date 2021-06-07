@@ -27,3 +27,15 @@ export class AppComponent {
     // console.log('My car has a color of ', this.car.color);
   }
 }
+
+/*
+we are getting
+  search() method reaching out to WikipediaService to Wikipedia API
+  and gets some data
+
+  1. app.modue.ts
+     import HttpClientModule and added to import:[]
+  2. go to wikipedia.service.ts
+      
+
+*/

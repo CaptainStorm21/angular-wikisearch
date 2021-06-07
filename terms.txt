@@ -1,0 +1,15 @@
+Dependency injection
+
+components, service and other thigs in angular ask for dependencyies rather than creating them directions_railway
+
+components need other thing to work correctly
+Our component could create an instane of those things themselves. instead, we create them separatly and ass them in to the constructor
+
+the automatic natuure of di is not sstrictly required
+
+
+axios is used to make network requests
+
+HttpClientModule allows to request and receive http access to all component
+if it is in app.module.ts 
+
