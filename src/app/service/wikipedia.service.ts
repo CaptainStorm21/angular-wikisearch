@@ -16,7 +16,16 @@ export class WikipediaService {
 
   public search(term: string) {
     // to make a request
-    return this.http.get();
+    return this.http.get('https://en.wikipedia.org/w/api.php', {
+      params: {
+        action: 'query',
+        format: 'json',
+        list: 'search',
+        utf8: '1',
+        srsearch: term,
+        origin: '*'
+      }
+    });
     // return 'I am wikipedia searhc result ';
   }
 }

@@ -11,5 +11,9 @@ the automatic natuure of di is not sstrictly required
 axios is used to make network requests
 
 HttpClientModule allows to request and receive http access to all component
-if it is in app.module.ts 
+if it is in app.module.ts
 
+
+
+
+w/api.php?action=query&format=json&list=search&utf8=1&srsearch=space

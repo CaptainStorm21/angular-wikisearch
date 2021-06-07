@@ -19,11 +19,15 @@ export class AppComponent {
     private wikipedia: WikipediaService,
  ) { }
 
+  // tslint:disable-next-line: typedef
   onTerm(term: string) {
+    this.wikipedia.search(term).subscribe((response) => {
+      console.log(response);
+    });
     // console.log('i am the app');
     // this tells us that we communicated from child to parent
-    const results = this.wikipedia.search(term);
-    console.log(results);
+    // const results = this.wikipedia.search(term);
+    // console.log(results);
     // console.log('My car has a color of ', this.car.color);
   }
 }
@@ -36,6 +40,6 @@ we are getting
   1. app.modue.ts
      import HttpClientModule and added to import:[]
   2. go to wikipedia.service.ts
-      
+
 
 */
