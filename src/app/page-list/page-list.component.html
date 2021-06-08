@@ -6,10 +6,21 @@
     <p [innerHTML]="page.snippet">{{ page.snippet }}</p>
   </div>
   <div class="card-footer">
-    <div class="text-right">
-      <span class="font-weight-bold"> Last Modified: </span>
-      {{ page.timestamp | date:'fullDate'
-      }}</div>
+    <div class="row">
+      <div class="col-6">
+        <a target="_blank" [href]=" 'https://en.wikipedia.org?curid=' + page.pageid ">
+        <button class="btn-info btn">
+          Read the Article
+        </button>
+      </a>
+      </div>
+      <div class="col-6 ">
+        <div class="float-right">
+        <span class="font-weight-bold "> Last Modified: </span>
+        {{ page.timestamp | date:'fullDate'
+        }}</div>
+      </div>
+    </div>
   </div>
 </div>
 
