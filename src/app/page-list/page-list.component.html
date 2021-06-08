@@ -3,7 +3,7 @@
     <div class="pl-1 bg-info">
       <h3 class="card-title text-white font-weight-bold">{{page.title}}</h3>
     </div>
-    <p>{{ page.snippet }}</p>
+    <p [innerHTML]="page.snippet">{{ page.snippet }}</p>
   </div>
   <div class="card-footer">
     <div class="text-right">
