@@ -30,6 +30,8 @@ export class WikipediaService {
   }
 }
 
+
+
 /*
 we want our Wikipedia service to make a request using an insatnace of a client
   export class WikipediaService
