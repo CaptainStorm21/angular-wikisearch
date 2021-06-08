@@ -1,13 +1,15 @@
 <div class="bg-light card mt-2" *ngFor="let page of pages">
   <div class="card-body">
-    <div class="p-1 bg-info">
+    <div class="pl-1 bg-info">
       <h3 class="card-title text-white font-weight-bold">{{page.title}}</h3>
     </div>
-    <div class="align-right">
+    <p>{{ page.snippet }}</p>
+  </div>
+  <div class="card-footer">
+    <div class="text-right">
       <span class="font-weight-bold"> Last Modified: </span>
       {{ page.timestamp | date:'fullDate'
       }}</div>
-    <p>{{ page.snippet }}</p>
   </div>
 </div>
 
